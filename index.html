@@ -1,0 +1,2126 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><link type="text/css" rel="stylesheet" id="dark-mode-custom-link">
+    <link type="text/css" rel="stylesheet" id="dark-mode-general-link">
+    <style lang="en" type="text/css" id="dark-mode-custom-style"></style>
+    <style lang="en" type="text/css" id="dark-mode-native-style"></style>
+    
+    
+    
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+            integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+        
+    <style>
+body,
+td,
+th {
+    font-size: 14px;
+    font-family: system-ui;
+    color: rgb(53, 53, 53);
+    cursor: default;
+    vertical-align: baseline;
+    outline: 0;
+    line-height: 1;
+    margin: 0;
+    padding: 0;
+    word-wrap: break-word;
+    scroll-margin-block: none;
+}
+
+a,
+a:link,
+a:visited,
+a:active,
+a:hover {
+    font-family: tahoma;
+    font-size: 14px;
+    color: #666;
+    text-decoration: none;
+}
+
+div,
+span,
+applet,
+object,
+iframe,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+font,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr {
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+    margin: 0;
+    padding: 0;
+}
+
+:focus {
+    outline: 0;
+}
+
+img {
+    border: none;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+}
+
+::selection {
+    background: #FFB90F;
+}
+
+::-moz-selection {
+    background: #0fb3ff;
+}
+
+#actionmenu {
+    top: 50%;
+    left: 50%;
+    width: 1200px;
+    height: 700px;
+    display: none;
+    overflow: auto;
+    position: fixed;
+    border-top: 12px solid #111;
+    border-left: 12px solid #111;
+    border-right: 12px solid #111;
+    border-bottom: 40px solid #111;
+    transform: translate(-50%, -50%);
+    background: #FFB90F;
+}
+
+buttom {
+    top: 50%;
+    left: 50%;
+    width: 40px;
+    height: 14px;
+    display: none;
+    position: fixed;
+    margin-top: 355px;
+    background: #ffffff;
+    transform: translate(-50%, -50%);
+}
+
+buttom:hover {
+    background: #fff;
+}
+
+#header {
+    float: left;
+    width: 100%;
+    height: 70px;
+    background: #5f4230;
+}
+
+#header img {
+    width: 60px;
+    height: auto;
+    float: left;
+    padding: 7px;
+}
+
+#header h1 {
+    float: left;
+    margin: 20px 20px;
+    color: #fff;
+}
+
+nav {
+    width: 15%;
+    height: 100%;
+    float: left;
+}
+
+.menu {
+    width: 100%;
+    height: 186px;
+    float: left;
+    /*background: rgba(118,194,169,0.1);*/
+}
+
+.sub-menu {
+    width: 100%;
+    height: 100%;
+    float: left;
+    border-right: 1px solid #000;
+    /*background: rgba(118,194,169,0.1);*/
+}
+
+.menu a {
+    color: #a2a0a0;
+    padding: 25px 10px;
+    font-weight: 700;
+    float: left;
+    width: 89%;
+    border-right: solid 1px #000;
+}
+
+.menu a:hover,
+.menu a:focus {
+    /*background: rgba(118,194,169,1);*/
+    color: #5f4230;
+    border-top: solid 1px #000;
+    border-bottom: solid 1px #000;
+    border-right: 0;
+    width: 161px;
+}
+
+.title {
+    width: 1125px;
+    float: left;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 5px 0 10px 15px;
+    border-bottom: 1px dashed #999;
+}
+
+.stitle {
+    width: 1110px;
+    padding: 15px 15px 30px;
+    float: left;
+    font-size: 14px;
+    line-height: 25px;
+}
+
+.stitle2 {
+    width: 1110px;
+    padding: 15px 15px 0;
+    float: left;
+    font-size: 14px;
+    line-height: 25px;
+}
+
+s {
+    color: #45fffc;
+    text-decoration: none;
+}
+
+.dtitle2 {
+    width: 355px;
+    padding: 15px 0 30px 15px;
+    float: left;
+    font-size: 14px;
+    line-height: 25px;
+}
+
+.dtitle3 {
+    width: 355px;
+    padding: 15px 0 0 15px;
+    float: left;
+    font-size: 14px;
+    line-height: 25px;
+}
+
+#opacity {
+    background: rgba(0, 0, 0, 0.05);
+    padding: 15px;
+    width: 1170px;
+    float: left;
+}
+
+#opacity2 {
+    padding: 15px;
+    width: 1170px;
+    float: left;
+}
+
+#opacity:hover,
+#opacity2:hover {
+    background: rgba(169, 73, 135, 0.1);
+}
+
+.title-one {
+    width: 310px;
+    float: left;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 5px 0 10px 15px;
+    border-bottom: 1px dashed #999;
+    margin: 0 0 15px;
+}
+
+.title-two {
+    width: 150px;
+    float: left;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    padding: 5px 0 10px 0;
+    border-bottom: 1px dashed #999;
+    margin: 0 0 15px;
+}
+
+.title-tree {
+    width: 150px;
+    float: left;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    padding: 5px 0 10px 0;
+    border-bottom: 1px dashed #999;
+    margin: 0 0 15px;
+}
+
+.title-four {
+    width: 200px;
+    float: left;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 5px 0 10px 15px;
+    border-bottom: 1px dashed #999;
+    margin: 0 0 15px;
+}
+
+.parts-one {
+    font-weight: 700;
+    width: 310px;
+    float: left;
+}
+
+.parts-two {
+    width: 150px;
+    float: left;
+    text-align: center;
+}
+
+.parts-tree {
+    width: 150px;
+    float: left;
+    text-align: center;
+}
+
+.parts-four {
+    width: 545px;
+    float: left;
+    padding: 0 0 0 15px;
+}
+
+
+
+.btn {
+    cursor: pointer;
+    position: relative;
+    text-decoration: none;
+    width: 100%;
+    color: #000;
+    border: 1px solid #000;
+    background-color: #ffffff;
+    height: 60px;
+}
+.botao {
+    cursor: pointer;
+    position: relative;
+    text-decoration: none;
+    width: 100%;
+    color: #000;
+    border: 1px solid #000;
+    background-color: #ffffff;
+    height: 40px;
+    font-size: 14px;
+    margin-bottom: 7px;
+}
+.botao.active {
+    border: 1px solid #14213d;
+    background-color: #14213d;
+    color: #fff;
+}
+.botao.active:hover {
+    border: 1px solid #1f325a;
+    color: #f0f0f0;
+    background-color: #1f325a;
+}
+.botao:hover {
+    border: 1px solid #14213d;
+    color: #14213d;
+    background-color: #FFF;
+}
+.botao.focus, .botao:focus, .botao:hover {
+    text-decoration: none;
+}
+
+.bt2.cor.active{
+    border: 1px solid #00798c;
+    background-color: #00798c;
+    color: #fff;
+}
+.bt2.cor.active:hover {
+    border: 1px solid #08879b;
+    color: #f0f0f0;
+    background-color: #08879b;
+}
+.bt2.cor:hover {
+    border: 1px solid #00798c;
+    color: #00798c;
+    background-color: #FFF;
+}
+.bt2.cor:focus, .bt2.cor:hover {
+    text-decoration: none;
+}
+
+
+.bt2.cor2.active{
+    border: 1px solid #ff7900;
+    background-color: #ff7900;
+    color: #fff;
+}
+.cor2.inputnumber {
+    border: 1px solid #ff7900;
+    color: #ff7900;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 3px;
+    margin-bottom: 10px;
+}
+.cor2.inputnumber::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #ff7900;
+    opacity: 0.5; /* Firefox */
+}
+.bt2.cor2.active:hover {
+    border: 1px solid #fa8825;
+    color: #f0f0f0;
+    background-color: #fa8825;
+}
+.bt2.cor2:hover {
+    border: 1px solid #ff7900;
+    color: #ff7900;
+    background-color: #FFF;
+}
+.bt2.cor2.focus, .bt2.cor2:focus, .bt2.cor2:hover {
+    text-decoration: none;
+}
+
+
+.bt2.cor3.active{
+    border: 1px solid #0c1821;
+    background-color: #0c1821;
+    color: #fff;
+}
+.cor3.inputnumber {
+    border: 1px solid #0c1821;
+    color: #0c1821;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 7px;
+}
+.cor3.inputnumber::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #0c1821;
+    opacity: 0.5; /* Firefox */
+}
+.bt2.cor3.active:hover {
+    border: 1px solid #0f1e29;
+    color: #f0f0f0;
+    background-color: #0f1e29;
+}
+.bt2.cor3:hover {
+    border: 1px solid #0c1821;
+    color: #0c1821;
+    background-color: #FFF;
+}
+.bt2.cor3:focus, .bt2.cor3:hover {
+    text-decoration: none;
+}
+
+
+.bt2.cor4.active{
+    border: 1px solid #25a244;
+    background-color: #25a244;
+    color: #fff;
+}
+.cor4.inputnumber {
+    border: 1px solid #25a244;
+    color: #25a244;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 7px;
+}
+.cor4.inputnumber::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #25a244;
+    opacity: 0.5; /* Firefox */
+}
+.bt2.cor4.active:hover {
+    border: 1px solid #2db14e;
+    color: #f0f0f0;
+    background-color: #2db14e;
+}
+.bt2.cor4:hover {
+    border: 1px solid #25a244;
+    color: #25a244;
+    background-color: #FFF;
+}
+.bt2.cor4:focus, .bt2.cor4:hover {
+    text-decoration: none;
+}
+
+
+.bt2.cor5.active{
+    border: 1px solid #240046;
+    background-color: #240046;
+    color: #fff;
+}
+.cor5.inputnumber {
+    border: 1px solid #240046;
+    color: #240046;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 7px;
+}
+.cor5.inputnumber::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #240046;
+    opacity: 0.5; /* Firefox */
+}
+.bt2.cor5.active:hover {
+    border: 1px solid #2e0257;
+    color: #f0f0f0;
+    background-color: #2e0257;
+}
+.bt2.cor5:hover {
+    border: 1px solid #240046;
+    color: #240046;
+    background-color: #FFF;
+}
+.bt2.cor5:focus, .bt2.cor5:hover {
+    text-decoration: none;
+}
+
+
+.bt2 {
+    cursor: pointer;
+    position: relative;
+    text-decoration: none;
+    width: 100%;
+    color: #000;
+    border: 1px solid #000;
+    background-color: #ffffff;
+    height: 40px;
+    font-size: 14px;
+    margin-bottom: 7px;
+}
+
+.crime-cor {
+    background-color: #00798c !important;
+    border: 1px solid #00798c !important;
+}
+.crime-cor2 {
+    background-color: #fa8825 !important;
+    border: 1px solid #fa8825 !important;
+}
+.crime-cor3 {
+    background-color: #0c1821 !important;
+    border: 1px solid #0c1821 !important;
+}
+.crime-cor4 {
+    background-color: #25a244 !important;
+    border: 1px solid #25a244 !important;
+}
+.crime-cor5 {
+    background-color: #240046 !important;
+    border: 1px solid #240046 !important;
+}
+
+#crimes-cometidos {
+    text-decoration: none;
+    width: 100%;
+    display: inline-grid;
+    margin-bottom: 7px;
+    line-height: 25px;
+    text-align: center;
+}
+
+#crimes-cometidos span {
+    cursor: help;
+    color: #fff;
+    border: 1px solid #282A3A;
+    background-color: #282A3A;
+    font-size: 13px;
+    border-radius: 0.25rem;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+
+.quadrotopo {
+    position: relative;
+    display: flex;
+    padding-bottom: 30px;
+}
+
+.quadro {
+    position: relative;
+    float: left;
+    width: 25%;
+}
+
+.quadro h3 {
+    text-align: center;
+}
+.quadro h3 p{
+    font-size: 11px;
+}
+
+.quadro h4 {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 13px;
+}
+
+.form-control:disabled, .form-control[readonly] {
+    border: 1px solid #000;
+    background-color: #fff;
+    opacity: 1;
+    text-align: center;
+    font-weight: 500;
+}
+
+.custombt, .custombt:focus {
+    width: 100%;
+    border: 0;
+    background-color: #111111;
+    color: #fff;
+}
+.custombt:hover {
+    background-color: #363636;
+    border: 0;
+}
+
+.right {
+    text-align: right;
+}
+
+.left {
+    text-align: left;
+}
+
+.center {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 18px;
+
+    justify-content: center;
+}
+
+h3 {
+    font-size: 18px;
+}
+
+h4 {
+    font-size: 15px;
+}
+
+label {
+    font-size: 12px;
+}
+
+.form-check-input:disabled~.form-check-label, .form-check-input[disabled]~.form-check-label {
+    opacity: .9;
+}
+.form-check-input {
+    border: 1px solid #0d6efd;;
+}
+.btn-success.disabled, .btn-success:disabled {
+    color: #fff;
+    background-color: #242424;
+    border-color: #242424;
+}
+.alert-red {
+    color: #ffffff;
+    background-color: #ef3434;
+    border-radius: 0 0 10px 10px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.alert-green {
+    color: #ffffff;
+    background-color: #2f5e2f;
+    border-radius: 0 0 10px 10px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.alert-blue {
+    color: #ffffff;
+    background-color: #223c85;
+    border-radius: 0 0 10px 10px;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 2px;
+}
+
+.customin {
+    font-size: 20px;
+}
+.margintop {
+    margin-top: 10px;
+}
+.label-calculadora {
+    font-size: 15px;
+    color: #333;
+    display: contents;
+}
+</style>
+        
+        <link rel="shortcut icon" href="https://cdn.discordapp.com/attachments/1154221500350607410/1154221796745281657/LOGO_-_BRANCO_-TRANSP.png" type="image/x-icon">
+        <title>Calculadora Penal - Stay City</title>
+        
+    
+    
+    
+    
+        <link rel="shortcut icon" href="https://cdn.discordapp.com/attachments/1154221500350607410/1154221796745281657/LOGO_-_BRANCO_-TRANSP.png" type="image/x-icon">
+        <title>Calculadora Penal</title>
+        <div class="header">
+            <img src="https://cdn.discordapp.com/attachments/1154221500350607410/1154222798458339338/header.png" alt="" style="width: 100%;">
+        </div>
+        <style type="text/css" id="operaUserStyle"></style></head><body><div class="fc quadrotopo form-control">
+            <div style="margin: auto;width: 30%;flex: 0 0 auto;">
+                <h3>Nome do Preso</h3>
+                <input type="text" placeholder="NOME DO PRESO" id="preso_nome" name="preso_nome" class="inputnumber form-control" size="8" style="margin-right:10px" required>
+            </div>
+            
+            <div style="margin: auto;width: 30%;flex: 0 0 auto;">
+                <h3>RG do Preso</h3>
+                <input type="number" placeholder="RG DO PRESO" id="preso_rg" name="preso_rg" class="inputnumber form-control" size="8" style="margin-right:10px" required>
+            </div>
+            
+            <div style="margin: auto;width: 30%;flex: 0 0 auto;">
+                <h3>RG do Advogado</h3>
+                <input type="number" placeholder="RG DO ADVOGADO" id="adv_rg" name="adv_rg" class="inputnumber form-control" size="8" style="margin-right:10px">
+            </div>  
+        </div>
+        <div class="fc quadrotopo form-control">
+    
+        <div style="margin: auto;width: 50%;flex: 0 0 auto;">
+            <label>FOTO:</label><br>
+            <input class="py-2 px-2 border border-solid" accept="image/*" type="file" name="titulo" id="fotoInp" required="">
+            <div style="margin: auto;width: 50%;flex: 0 0 auto;">
+                <button class="btn btn-success" id="copy-image"> <i class="bi bi-image"></i> Copiar Foto</button>
+            
+            </div>
+    
+          </div>
+          <div style="margin: auto;width: 50%;flex: 0 0 auto;">
+            <label>INVENTÁRIO:</label><br>
+            <input class="py-2 px-2 border border-solid" accept="image/*" type="file" name="titulo" id="invInp">
+            <div style="margin: auto;width: 50%;flex: 0 0 auto;">
+    
+            <button class="btn btn-success" id="copy-inv"> <i class="bi bi-image"></i> Copiar Inventário</button>
+    
+          </div>
+          </div>
+          </div>
+    
+    
+        <!-- <div class="row">
+            <img src="" alt="" height="500px" >
+    
+        </div> -->
+        <br>
+
+        <!-- QUADRO 1 -->
+
+        <div id="1" class="fc quadro form-control">
+            <h3>
+                <font color="#022d42">VIOLAÇÃO DE TRÂNSITO E AÉREA:</font>
+            </h3>
+            <div class="col col-md-12">
+                <input id="Art. 1 - Estacionar em cima da calçada" type="checkbox" class="form-check-input" name="crime" value="0|15000|0" onclick="calcular()">
+                <label class="form-check-label" title="Quando alguém estacionou o veículo em cima da calçada." 
+                for="Art. 1 - Estacionar em cima da calçada">Art. 1 - Estacionar em cima da calçada</label>
+            </div>
+            <div class="col col-md-12">
+                <input id="Art. 2 - Estacionar o veículo na faixa vermelha" type="checkbox" class="form-check-input" name="crime" value="0|12000|0" onclick="calcular()">
+                <label class="form-check-label" title="Quando um cidadão estaiona o veículo na faixa vermelha." 
+                for="Art. 2 - Estacionar o veículo na faixa vermelha">Art. 2 - Estacionar o veículo na faixa vermelha</label>
+            </div>
+            <div class="col col-md-12">
+                <input id="Art. 3 - Estacionar em local proibido" type="checkbox" class="form-check-input" name="crime" value="0|10000|0" onclick="calcular()">
+                <label class="form-check-label" title="Quando um cidadão estiona o veiculo em local proibido." 
+                for="Art. 3 - Estacionar em local proibido">Art. 3 - Estacionar em local proibido</label>
+            </div>
+            <div class="col col-md-12">
+                <input id="Art. 4 - Atropelamento culposo" type="checkbox" class="form-check-input" name="crime" value="20|50000|60000" onclick="calcular()">
+                <label class="form-check-label" title="É o ato de atropelar uma pessoa sem intenção de matar." 
+                for="Art. 4 - Atropelamento culposo">Art. 4 - Atropelamento culposo</label>
+            </div>
+            <div class="col col-md-12">
+                <input id="Art. 5 - Atropelamento doloso" type="checkbox" class="form-check-input" name="crime" value="25|100000|110000" onclick="calcular()">
+                <label class="form-check-label" title="É o ato de atropelar uma pessoa na intenção de matar." 
+                for="Art. 5 - Atropelamento doloso">Art. 5 - Atropelamento doloso</label>
+            </div>
+            <div class="col col-md-12">
+                <input id="Art. 6 - Atropelamento coletivo" type="checkbox" class="form-check-input" name="crime" value="30|200000|210000" onclick="calcular()">
+                <label class="form-check-label" title="É o ato de atropelar mais de uma pessoa na intenção de matar." 
+                for="Art. 6 - Atropelamento Coletivo">Art. 6 - Atropelamento Coletivo</label>
+            </div>
+            <div class="col col-md-12">
+                <input id="Art. 7 - Veiculo avariado" type="checkbox" class="form-check-input" name="crime" value="0|20000|0" onclick="calcular()">
+                <label class="form-check-label" title="É o quando algum veículo está danificado." 
+                for="Art. 7 - Veiculo Avariado">Art. 7 - Veiculo Avariado</label>
+            </div>
+            <div class="col col-md-12">
+                <input id="Art. 8 - Abandono de veículo de trabalho" type="checkbox" class="form-check-input" name="crime" value="0|25000|0" onclick="calcular()">
+                <label class="form-check-label" title="É o ato de abandonar um veículo de serviço privado ou público." 
+                for="Art. 8 - Abandono de veículo de trabalho">Art. 8 - Abandono de veículo de trabalho</label>
+            </div>
+            <div class="col col-md-12">
+                <input id="Art. 9 - Abandono de veículo alugado" type="checkbox" class="form-check-input" name="crime" value="0|25000|0" onclick="calcular()">
+                <label class="form-check-label" title="É o ato de abandonar um veículo alugado." 
+                for="Art. 9 - Abandono de veículo alugado">Art. 9 - Abandono de veículo alugado</label>
+            </div>
+            <div class="col col-md-12">
+                <input id="Art. 10 - Cometer crime com um veículo público" type="checkbox" class="form-check-input" name="crime" value="30|50000|60000" onclick="calcular()">
+                <label class="form-check-label" title="É o ato cometer um crime utilizando algum veículo da prefeitura." 
+                for="Art. 10 - Cometer crime com um veículo público">Art. 10 - Cometer crime com um veículo público</label>
+            </div>
+            <div class="col col-md-12">
+                <input id="Art. 11 - Poluição sonora" type="checkbox" class="form-check-input" name="crime" value="15|20000|25000" onclick="calcular()">
+                <label class="form-check-label" title="É o ato de poluir o ambiente público com algum tipo de som. Exemplos: Músicas, 
+                Buzina de carro e etc. OBS: Levar preso se o cidadão persistir." 
+                for="Art. 11 - Poluição sonora">Art. 11 - Poluição sonora</label>
+            </div>
+            <div class="col col-md-12">
+                <input id="Art. 12 - Direção perigosa" type="checkbox" class="form-check-input" name="crime" value="25|30000|35000" onclick="calcular()">
+                <label class="form-check-label" title="É o ato digirir um veículo de forma imprudente na qual leva o risco de vida dos pedestres e também vale
+                se o mesmo não estiver usando o capacete." 
+                for="Art. 12 - Direção perigosa">Art. 12 - Direção perigosa</label>
+            </div>
+            <div class="col col-md-12">
+                <input id="Art. 13 - Pousar aeronave em inadequado" type="checkbox" class="form-check-input" name="crime" value="0|25000|0" onclick="calcular()">
+                <label class="form-check-label" title="É o ato de pousar uma aeronave em locais 
+                que não seja pistas de pouso, helipontos e heliportos." 
+                for="Art. 13 - Pousar aeronave em inadequado">Art. 13 - Pousar aeronave de forma inadequada</label>
+            </div>
+            <!-- ARTIGO ADICIONADO RECENTEMENTE EM 09/2023 -->
+            <div class="col col-md-12">
+                <input id="Art. 14 - Tentativa de fuga" type="checkbox" class="form-check-input" name="crime" value="35|35000|29500" onclick="calcular()">
+                <label class="form-check-label" title="É o ato de tentar fugir de uma força policial." 
+                for="Art. 14 - Tentativa de fuga">Art. 14 - Tentativa de fuga</label>
+            </div>
+            <div class="col col-md-12">
+                <input id="Art. 15 - Não Ceder Passagem a Viaturas" type="checkbox" class="form-check-input" name="crime" value="0|25000|0" onclick="calcular()">
+                <label class="form-check-label" title="É o ato não ceder passagems de viaturas." 
+                for="Art. 15 - Não Ceder Passagem a Viaturas">Art. 15 - Não Ceder Passagem a Viaturas</label>
+            </div>
+            
+            <hr>
+
+            <h3>
+                <font color="#022d42">CRIMES CONTRA PESSOA GRAVE:</font>
+            </h3>
+
+            <div class="col col-md-12">
+                <input id="Art. 16 - Tentativa de Homicídio" type="checkbox" class="form-check-input" name="crime" value="25|50000|NA" onclick="calcular()">
+                <label class="form-check-label" title="Quando uma pessoa toma alguma ação, ou deliberada 
+                e maliciosamente, com a intenção de causar a morte de outra pessoa e não tem sucesso." 
+                for="Art. 16 - Tentativa de Homicídio">Art. 16 - Tentativa de Homicídio</label>
+            </div>
+            <div class="col col-md-12">
+                <input id="Art. 17 - Homicídio Doloso" type="checkbox" class="form-check-input" name="crime" value="50|100000|NA" onclick="calcular()">
+                <label class="form-check-label" title="Quando uma pessoa toma alguma ação, ou deliberada e maliciosamente a morte de outra pessoa." 
+                for="Art. 17 - Homicídio Doloso">Art. 17 - Homicídio Doloso</label>
+            </div>
+            <div class="col col-md-12">
+                <input id="Art. 18 - Homicídio Culposo" type="checkbox" class="form-check-input" name="crime" value="30|50000|NA" onclick="calcular()">
+                <label class="form-check-label" title="Quando uma pessoa toma alguma ação, ou deliberada 
+                e maliciosamente sem a intenção de causar a morte de outra pessoa." 
+                for="Art. 18 - Homicídio Culposo">Art. 18 - Homicídio Culposo</label>
+            </div>
+            <div class="col col-md-12">
+                <input id="Art. 19 - Homicídio a servidor público" type="checkbox" class="form-check-input" name="crime" value="70|200000|NA" onclick="calcular()">
+                <label class="form-check-label" title="Quando uma pessoa toma alguma ação, ou deliberada 
+                e maliciosamente com a intenção de causar a morte de um servidor público." 
+                for="Art. 19 - Homicídio a servidor público">Art. 19 - Homicídio a servidor público</label>
+            </div>
+            <div class="col col-md-12">
+                <input id="Art. 20 - Genocídio" type="checkbox" class="form-check-input" name="crime" value="100|300000|NA" onclick="calcular()">
+                <label class="form-check-label" title="Quando uma pessoa toma alguma ação, ou deliberada 
+                e maliciosamente com a intenção de causar a morte múltiplas pessoas." 
+                for="Art. 20 - Genocídio">Art. 20 - Genocídio</label>
+            </div>
+            <div class="col col-md-12">
+                <input id="Art. 21 - Latrocínio" type="checkbox" class="form-check-input" name="crime" value="60|120000|NA" onclick="calcular()">
+                <label class="form-check-label" title="Quando uma pessoa toma alguma ação, ou deliberada 
+                e maliciosamente com a intenção de roubar e matar." 
+                for="Art. 21 - Latrocínio">Art. 21 - Latrocínio</label>
+            </div>
+            <div class="col col-md-12">
+                <input id="Art. 22 - Agressão corporal" type="checkbox" class="form-check-input" name="crime" value="20|30000|40000" onclick="calcular()">
+                <label class="form-check-label" title="Quando uma pessoa toma alguma ação de agredir uma outra pesso." 
+                for="Art. 22 - Agressão corporal">Art. 22 - Agressão corporal</label>
+            </div>
+            <div class="col col-md-12">
+                <input id="Art. 23 - Causar incêndio ou explosão" type="checkbox" class="form-check-input" name="crime" value="30|40000|50000" onclick="calcular()">
+                <label class="form-check-label" title="Quando uma pessoa toma alguma ação de atear fogo ou explodir alguma coisa." 
+                for="Art. 23 - Causar incêndio ou explosão">Art. 23 - Causar incêndio ou explosão</label>
+            </div>
+            <div class="col col-md-12">
+                <input id="Art. 24 - Sequestro" type="checkbox" class="form-check-input" name="crime" value="50|80000|NA" onclick="calcular()">
+                <label class="form-check-label" title="Apreender e levar ilegalmente uma pessoa pela força ou fraude, ou 
+                apreender e deter uma pessoa contra a sua vontade com a intenção de levar essa pessoa embora mais tarde. 
+                No caso em que vários reféns são tomados de uma só vez, apenas uma cobrança será apresentada. OBS: Não é válido somar
+                os Art. 101 e 81." 
+                for="Art. 24 - Sequestro">Art. 24 - Sequestro</label>
+            </div>
+            <div class="col col-md-12">
+                <input id="Art. 25 - Omissão de socorro" type="checkbox" class="form-check-input" name="crime" value="20|30000|40000" onclick="calcular()">
+                <label class="form-check-label" title="Quando uma pessoa toma alguma ação de prestar socorro." 
+                for="Art. 25 - Omissão de socorro">Art. 25 - Omissão de socorro</label>
+            </div>
+            <div class="col col-md-12">
+                <input id="Art. 26 - Abandono de incapaz" type="checkbox" class="form-check-input" name="crime" value="30|40000|NA" onclick="calcular()">
+                <label class="form-check-label" title="Quando uma pessoa abandona quem está sob seu cuidado, guarda, vigilância ou autoridade." 
+                for="Art. 26 - Abandono de incapaz">Art. 26 - Abandono de incapaz</label>
+            </div>
+            <div class="col col-md-12">
+                <input id="Art. 27 - Maus tratos" type="checkbox" class="form-check-input" name="crime" value="30|50000|NA" onclick="calcular()">
+                <label class="form-check-label" title="Quando uma pessoa mau trata alguma pessoa fisícamente." 
+                for="Art. 27 - Maus tratos">Art. 27 - Maus tratos</label>
+            </div>
+            <div class="col col-md-12">
+                <input id="Art. 28 - Cálunia" type="checkbox" class="form-check-input" name="crime" value="0|10000|30000" onclick="calcular()">
+                <label class="form-check-label" title="Quando uma pessoa conta uma mentira sobre alguém, agindo de má-fé." 
+                for="Art. 28 - Cálunia">Art. 28 - Cálunia</label>
+            </div>
+            <div class="col col-md-12">
+                <input id="Art. 29 - Difamação" type="checkbox" class="form-check-input" name="crime" value="20|20000|30000" onclick="calcular()">
+                <label class="form-check-label" title="Quando uma pessoa cria uma má fama da vítima." 
+                for="Art. 29 - Difamação">Art. 29 - Difamação</label>
+            </div>
+            <div class="col col-md-12">
+                <input id="Art. 29.1 - Difamação * 2" type="checkbox" class="form-check-input" name="crime" value="10|20000|30000" onclick="calcular()">
+                <label class="form-check-label" title="Quando uma pessoa cria uma má fama da vítima." 
+                for="Art. 29.1 - Difamação * 2">Art. 29.1 - Difamação * 2</label>
+            </div>
+            <div class="col col-md-12">
+                <input id="Art. 29.2 - Difamação * 3" type="checkbox" class="form-check-input" name="crime" value="20|20000|30000" onclick="calcular()">
+                <label class="form-check-label" title="Quando uma pessoa cria uma má fama da vítima." 
+                for="Art. 29.2 - Difamação * 3">Art. 29.2 - Difamação * 3</label>
+            </div>
+            <div class="col col-md-12">
+                <input id="Art. 30 - Atentado ao pudor" type="checkbox" class="form-check-input" name="crime" value="25|25000|35000" onclick="calcular()">
+                <label class="form-check-label" title="Quando uma pessoa constrange alguém, mediante violência 
+                ou grave ameaça, a praticar ou permitir que com ele se pratique ato libidinoso diverso da conjunção carnal." 
+                for="Art. 30 - Atentado ao pudor">Art. 30 - Atentado ao pudor</label>
+            </div>
+            <div class="col col-md-12">
+                <input id="Art. 31 - Ameaça" type="checkbox" class="form-check-input" name="crime" value="30|30000|40000" onclick="calcular()">
+                <label class="form-check-label" title="Quando uma pessoa ameaça de morte a um cidadão." 
+                for="Art. 31 - Ameaça">Art. 31 - Ameaça</label>
+            </div>
+            <div class="col col-md-12">
+                <input id="Art. 32 - Uso indevido da imagem" type="checkbox" class="form-check-input" name="crime" value="20|20000|NA" onclick="calcular()">
+                <label class="form-check-label" title="Quando uma pessoa ultiliza foto, imagem, vídeo de alguém sem seu consentimento." 
+                for="Art. 32 - Uso indevido da imagem">Art. 32 - Uso indevido da imagem</label>
+            </div>
+        </div>
+
+        <!-- QUADRO 2 -->
+    
+        <div id="2" class="quadro form-control">
+            <h3>
+                <font color="#022d42">DINHEIRO SUJO OU MARCADO:</font>
+            </h3>
+    
+            <div class="col col-md-12">
+                <input id="Art. 33 - Dinheiro Sujo" type="checkbox" class="form-check-input" name="crime" value="20|20000|30000" onclick="calcular()">
+                <label class="form-check-label" for="Art. 33 - Dinheiro Sujo">Art. 33 - Dinheiro Sujo</label>
+    
+                <font color="#275c3d">
+                    <input type="number" id="sujo" placeholder="R$ Dinheiro sujo" name="sujo" class="form-control" onchange="calcular()" size="9">
+                    <br>
+                </font>
+            </div><font color="#275c3d">
+            
+            <hr>
+            
+            <h3>
+                <font color="#022d42">CRIMES CONTRA O PATRIMÔNIO:</font>
+            </h3>
+            <div class="col col-md-12">
+                <input id="Art. 34 - Direitos Autorais" type="checkbox" class="form-check-input" name="crime" value="35|35000|45000" onclick="calcular()">
+                <label class="form-check-label" title="Uso indevido da marca de empresas ou pessoas júridicas OBS: Somente 
+                poderá ser aplicada mediante a processo judicial." 
+                for="Art. 34 - Direitos Autorais">Art. 34 - Direitos Autorais</label>
+            </div>
+            <div class="col col-md-12">
+                <input id="Art. 35 - Furto" type="checkbox" class="form-check-input" name="crime" value="20|20000|30000" onclick="calcular()">
+                <label title="Crime de quando o elemento pega algo que não lhe pertence." class="form-check-label" 
+                for="Art. 35 - Furto">Art. 35 - Furto</label>
+            </div>
+            <div class="col col-md-12">
+                <input id="Art. 36 - Roubo" type="checkbox" class="form-check-input" name="crime" value="30|30000|40000" onclick="calcular()">
+                <label class="form-check-label" title="Consiste em roubar ou tomar posse de um objeto como carros, celular e etc." 
+                for="Art. 36 - Roubo">Art. 36 - Roubo</label>
+            </div>
+            <div class="col col-md-12">
+                <input id="Art. 37 - Extorsão" type="checkbox" class="form-check-input" name="crime" value="30|30000|30000" onclick="calcular()">
+                <label class="form-check-label" title="Crime caracterizado pela conduta de constranger alguém a fazer, tolerar ou 
+                deixar de fazer algo sob violência ou grave ameaça, com o objetivo de obter vantagem econômica indevida." 
+                for="Art. 37 - Extorsão">Art. 37 - Extorsão</label>
+            </div>
+            <div class="col col-md-12">
+                <input id="Art. 38 - Destruição de patrimônio privado" type="checkbox" class="form-check-input" name="crime" value="20|20000|30000" onclick="calcular()">
+                <label class="form-check-label" title="É um ato de destruir construções, depredar ou danificar 
+                pertences de uma propriedade privada." 
+                for="Art. 38 - Destruição de patrimônio privado">Art. 38 - Destruição de patrimônio privado</label>
+            </div>
+            <div class="col col-md-12">
+                <input id="Art. 39 - Destruição de patrimônio público" type="checkbox" class="form-check-input" name="crime" value="30|30000|40000" onclick="calcular()">
+                <label class="form-check-label" title="É um ato de destruir construções, depredar ou danificar 
+                pertences de uma propriedade pública." 
+                for="Art. 39 - Destruição de patrimônio público">Art. 39 - Destruição de patrimônio público</label>
+            </div>
+            <div class="col col-md-12">
+                <input id="Art. 40 - Invasão a propriedade" type="checkbox" class="form-check-input" name="crime" value="20|20000|30000" onclick="calcular()">
+                <label class="form-check-label" title="Crime que ocorre quando o elemento invade uma propriedade 
+                sem o consentimento do locador." 
+                for="Art. 40 - Invasão a propriedade">Art. 40 - Invasão a propriedade</label>
+            </div>
+    
+            <hr>
+    
+            <h3>
+                <font color="#022d42">CRIMES CONTRA A ORDEM PÚBLICA:</font>
+            </h3>
+    
+            <div class="col col-md-12">
+                <input id="Art. 41 - Incitar a prática de crime" type="checkbox" class="form-check-input" name="crime" value="5|1000|5000" onclick="calcular()">
+                <label class="form-check-label" title="Ato de incitar uma pessoa em efetuar algum tipo de crime." 
+                for="Art. 41 - Incitar a prática de crime">Art.41 - Incitar a prática de crime</label>
+            </div>
+            <div class="col col-md-12">
+                <input id="Art. 42 - Associação criminosa" type="checkbox" class="form-check-input" name="crime" value="40|50000|NA" onclick="calcular()">
+                <label class="form-check-label" title="Ato de associarem-se 3 pessoa para o fim especifico de cometer crimes.
+                " for="Art. 42 - Associação criminosa">Art. 42 - Associação criminosa</label>
+            </div>
+            <div class="col col-md-12">
+                <input id="Art. 43 - Uso indevido do 190" type="checkbox" class="form-check-input" name="crime" value="20|30000|35000" onclick="calcular()">
+                <label class="form-check-label" title="Se alguém for um infrator reincidente, ele pode ser enviado 
+                para a cadeia, use seu melhor julgamento." 
+                for="Art. 43 - Uso indevido do 190">Art. 43 - Uso indevido do 190</label>
+            </div>
+            <div class="col col-md-12">
+                <input id="Art. 44 - Formação de quadrilha" type="checkbox" class="form-check-input" name="crime" value="50|60000|NA" onclick="calcular()">
+                <label class="form-check-label" title="Consiste na associação de quatro 
+                ou mais pessoas que se dedicam a cometer um ou mais delitos." 
+                for="Art. 44 - Formação de quadrilha">Art. 44 - Formação de quadrilha</label>
+            </div>
+            <div class="col col-md-12">
+                <input id="Art. 45 - Tráfico de drogas" type="checkbox" class="form-check-input" name="crime" value="30|20000|30000" onclick="calcular()">
+                <label class="form-check-label" title="Quando um elemento possuir 10 unidades ou mais 
+                passará por avaliação de périto" 
+                for="Art. 45 - Tráfico de drogas">Art. 45 - Tráfico de drogas</label>
+            </div>
+            <div class="col col-md-12">
+                <input id="Art. 46 - Tráfico de armas" type="checkbox" class="form-check-input" name="crime" value="70|50000|NA" onclick="calcular()">
+                <label class="form-check-label" title="Quando um elemento possuir mais de 3 armas." 
+                for="Art. 46 - Tráfico de armas">Art. 46 - Tráfico de armas</label>
+            </div>
+            <div class="col col-md-12">
+                <input id="Art. 47 - Tráfico ilegal de munições" type="checkbox" class="form-check-input" name="crime" value="60|40000|NA" onclick="calcular()">
+                <label class="form-check-label" title="Quando um elemento possuir mais de 50 unidades" 
+                for="Art. 47 - Tráfico ilegal de munições">Art. 47 - Tráfico ilegal de munições </label>
+            </div>
+            <div class="col col-md-12">
+                <input id="Art. 48 - Posse ilegal de munições" type="checkbox" class="form-check-input" name="crime" value="30|30000|40000" onclick="calcular()">
+                <label class="form-check-label" title="Quando um elemento possuir menos de 50 unidades." 
+                for="Art. 48 - Posse ilegal de munições">Art. 48 - Posse ilegal de munições </label>
+            </div>
+            <div class="col col-md-12">
+                <input id="Art. 49 - Porte ilegal de armas de baixo e médio calibre" type="checkbox" class="form-check-input" name="crime" value="40|40000|50000" onclick="calcular()">
+                <label class="form-check-label" title="Porte ilegal de pistolas ou submetralhadoras." 
+                for="Art. 49 - Porte ilegal de armas de baixo e médio calibre">Art. 49 - Porte ilegal de armas de baixo e médio calibre</label>
+            </div>
+            <div class="col col-md-12">
+                <input id="Art. 50 - Porte ilegal de armas de alto calibre" type="checkbox" class="form-check-input" name="crime" value="50|50000|60000" onclick="calcular()">
+                <label class="form-check-label" title="Porte ilegal de fuzis, escopetas e armamentos explosivos." 
+                for="Art. 50 - Porte ilegal de armas de alto calibre">Art. 50 - Porte ilegal de armas de alto calibre</label>
+            </div>
+            <div class="col col-md-12">
+                <input id="Art. 51 - Ocultação facial" type="checkbox" class="form-check-input" name="crime" value="15|30000|40000" onclick="calcular()">
+                <label class="form-check-label" title="Uso de qualquer tipo de ocultação facial é proibido. Mas, salvo 
+                perante o mesmo ter alguma doença que possa provar com o laudo médico." 
+                for="Art. 51 - Ocultação facial">Art. 51 - Ocultação facial</label>
+            </div>
+            <div class="col col-md-12">
+                <input id="Art. 52 - Trajes ilegais" type="checkbox" class="form-check-input" name="crime" value="25|25000|35000" onclick="calcular()">
+                <label class="form-check-label" title="Utilização de vestimentas militares (roupas de policiais, colete bálistico, 
+                e coldre só é permitido se houver porte de armas.)" 
+                for="Art. 52 - Trajes ilegais">Art. 52 - Trajes ilegais</label>
+            </div>
+            <div class="col col-md-12">
+                <input id="Art. 53 - Obstrução facial" type="checkbox" class="form-check-input" name="crime" value="25|25000|35000" onclick="calcular()">
+                <label class="form-check-label" title="Efetuar procedimentos esteticos para disfarçar o rosto para evitar punição
+                criminal ou fugir de investigação policial. OBS: Somente mediante o devido processo legal, seja judicial ou administrativo." 
+                for="Art. 53 - Obstrução facial">Art. 53 - Obstrução facial</label>
+            </div>
+            <div class="col col-md-12">
+                <input id="Art. 54 - Lavagem de dinheiro" type="checkbox" class="form-check-input" name="crime" value="100|100000|NA" onclick="calcular()">
+                <label class="form-check-label" title="Somente mediante o devido processo legal, seja judicial ou administrativo." 
+                for="Art. 54 - Lavagem de dinheiro ">Art. 54 - Lavagem de dinheiro</label>
+            </div>
+            <div class="col col-md-12">
+                <input id="Art. 55 - Posse de Itens Ilegais" type="checkbox" class="form-check-input" name="crime" value="35|50000|25000" onclick="calcular()">
+                <label class="form-check-label" title="Posse de qualquer ferramenta usada para algum 
+                crime. Lockpick, capuz, algema, explosivo e etc." 
+                for="Art. 55 - Posse de Itens Ilegais">Art. 55 - Posse de Itens Ilegais</label>
+            </div>
+            <div class="col col-md-12">
+                <input id="Art. 56 - Uso indevido do porte de armas" type="checkbox" class="form-check-input" name="crime" value="40|50000|60000" onclick="calcular()">
+                <label class="form-check-label" title="Caso o porte não for usado para segurança pessoal, deve ser cancelado imediatamente
+                o porte de armas." 
+                for="Art. 56 - Uso indevido do porte de armas">Art. 56 - Uso indevido do porte de armas</label>
+            </div>
+            <div class="col col-md-12">
+                <input id="Art. 57 - Pertubação da ordem pública" type="checkbox" class="form-check-input" name="crime" value="30|60000|70000" onclick="calcular()">
+                <label class="form-check-label" title="Ato de causar balbúrdia, confusão ou caos em público." 
+                for="Art. 57 - Pertubação da ordem pública">Art. 57 - Pertubação da ordem pública</label>
+            </div>
+        </font></div><font color="#275c3d">
+        
+        <!-- QUADRO 3 -->
+        
+        <div id="3" class="quadro form-control">
+            <h3>
+                <font color="#022d42">CRIMES CONTRA A ADMINISTRAÇÃO PÚBLICA:</font>
+            </h3>
+            <div class="col col-md-12">
+                <input id="Art. 58 - Falsidade ideológica" type="checkbox" class="form-check-input" name="crime" value="25|25000|35000" onclick="calcular()">
+                <label class="form-check-label" for="Art. 58 - Falsidade ideológica" title="Omitir passaporte, identidade 
+                ou assumir a identidade de terceiros.">Art. 58 - Falsidade ideológica</label>
+            </div>
+            <div class="col col-md-12">
+                <input id="Art. 59 - Exercício ilegal da profissão" type="checkbox" class="form-check-input" name="crime" value="30|30000|40000" onclick="calcular()">
+                <label class="form-check-label" title="Exercer atividade da qual está proibido pelo comando, decisão." 
+                for="Art. 59 - Exercício ilegal da profissão">Art. 59 - Exercício ilegal da profissão</label>
+            </div>
+            <div class="col col-md-12">
+                <input id="Art. 60 - Abandono de função" type="checkbox" class="form-check-input" name="crime" value="20|30000|50000" onclick="calcular()">
+                <label class="form-check-label" title="Abandonar cargo público fora dos prazos estabelecidos pela Administração." 
+                for="Art. 60 - Abandono de função">Art. 60 - Abandono de função</label>
+            </div>
+            <div class="col col-md-12">
+                <input id="Art. 61 - Desobediência" type="checkbox" class="form-check-input" name="crime" value="30|30000|60000" onclick="calcular()">
+                <label class="form-check-label" title="Nenhuma pessoa poderá deixar de cumprir qualquer 
+                ordem legal ou direção de qualquer policial ou juridico."
+                for="Art. 61 - Desobediência">Art. 61 - Desobediência</label>
+            </div>
+            <div class="col col-md-12">
+                <input id="Art. 62 - Desacato" type="checkbox" class="form-check-input" name="crime" value="30|30000|50000" onclick="calcular()">
+                <label class="form-check-label" title="Ofença GRAVE contra fúncionario público ou instituição ao qual pertence, no exercício
+                de suas funções." 
+                for="Art. 62 - Desacato">Art. 62 - Desacato</label>
+            </div>
+            <div class="col col-md-12">
+                <input id="Art. 62.1 - Múltiplos desacatos" type="checkbox" class="form-check-input" name="crime" value="30|30000|50000" onclick="calcular()">
+                <label class="form-check-label" title="Diversas ofenças GRAVE contra fúncionario público ou instituição ao qual pertence, no exercício
+                de suas funções." 
+                for="Art. 62.1 - Múltiplos desacatos">Art. 62.1 - Múltiplos desacatos</label>
+            </div>
+            <div class="col col-md-12">
+                <input id="Art. 63 - Tráfico de influência" type="checkbox" class="form-check-input" name="crime" value="15|15000|25000" onclick="calcular()">
+                <label class="form-check-label" title="Ultilizar sua incluência para obter vantagem do servidor público ou privado." 
+                for="Art. 63 - Tráfico de influência">Art. 63 - Tráfico de influência</label>
+            </div>
+            <div class="col col-md-12">
+                <input id="Art. 64 - Tentativa de suborno" type="checkbox" class="form-check-input" name="crime" value="30|30000|40000" onclick="calcular()">
+                <label class="form-check-label" title="Tentativa de suborno ato ou efeito de subornar; compra, dinheiro ou 
+                valor que se suborna." 
+                for="Art. 64 - Tentativa de suborno">Art. 64 - Tentativa de suborno</label>
+            </div>
+            <div class="col col-md-12">
+                <input id="Art. 65 - Suborno" type="checkbox" class="form-check-input" name="crime" value="30|30000|40000" onclick="calcular()">
+                <label class="form-check-label" title="Suborno ato ou efeito de subornar; compra, dinheiro 
+                ou valor que se suborna ou se tenta subornar." 
+                for="Art. 65 - Suborno">Art. 65 - Suborno</label>
+            </div>
+            <div class="col col-md-12">
+                <input id="Art. 66 - Violação do sigilo funcional" type="checkbox" class="form-check-input" name="crime" value="40|40000|50000" onclick="calcular()">
+                <label class="form-check-label" title="Revelar fato de que tem ciência em razão do cargo e que deva permanecer
+                em segredo." 
+                for="Art. 66 - Violação do sigilo funcional">Art. 66 - Violação do sigilo funcional</label>
+            </div>
+            <div class="col col-md-12">
+                <input id="Art. 67 - Fraudar informações" type="checkbox" class="form-check-input" name="crime" value="25|25000|35000" onclick="calcular()">
+                <label class="form-check-label" title="Induzir o agente público ao erro de forma intencional." 
+                for="Art. 67 - Fraudar informações">Art. 67 - Fraudar informações</label>
+            </div>
+            <div class="col col-md-12">
+                <input id="Art. 68 - Prevaricação" type="checkbox" class="form-check-input" name="crime" value="20|20000|30000" onclick="calcular()">
+                <label class="form-check-label" title="Prevaricação consiste em um agente público ter o dever de agir
+                mediante uma situação e não age." 
+                for="Art. 68 - Prevaricação">Art. 68 - Prevaricação</label>
+            </div>
+            <div class="col col-md-12">
+                <input id="Art. 69 - Abuso de autoridade" type="checkbox" class="form-check-input" name="crime" value="40|50000|NA" onclick="calcular()">
+                <label class="form-check-label" title="Quando o Agente usa das suas atribuições do cargo para constranger, ameaçar, 
+                agredir ou qualquer outro ato que atinja um cidadão. ( DEVERA NESSE CASO SER ANALISADO PELA HIERARQUIA SUPERIOR DA 
+                POLICIA)." 
+                for="Art. 69 - Abuso de autoridade">Art. 69 - Abuso de autoridade</label>
+            </div>
+            <div class="col col-md-12">
+                <input id="Art. 70 - Falso testemunho" type="checkbox" class="form-check-input" name="crime" value="60|60000|70000" onclick="calcular()">
+                <label class="form-check-label" title="Fazer falsas provas, mentir ou omitir fatos." 
+                for="Art. 70 - Falso testemunho">Art. 70 - Falso testemunho</label>
+            </div>
+            <div class="col col-md-12">
+                <input id="Art. 71 - Investigação indevida" type="checkbox" class="form-check-input" name="crime" value="40|80000|NA" onclick="calcular()">
+                <label class="form-check-label" title="Iniciar investigação em um índividuo sabendo que o mesmo é inocente." 
+                for="Art. 71 - Investigação indevida">Art. 71 - Investigação indevida</label>
+            </div>
+            <div class="col col-md-12">
+                <input id="Art. 72 - Denúncia caluniosa" type="checkbox" class="form-check-input" name="crime" value="45|75000|150000" onclick="calcular()">
+                <label class="form-check-label" title="Dar a causa à instauração de inquérito policial, de procedimento investigátorio 
+                criminal, de processo judicial, administrativo disciplinar, de inquérito civil ou de ação improbilidade administrativa 
+                contra alguém." 
+                for="Art. 72 - Denúncia caluniosa">Art. 72 - Denúncia caluniosa</label>
+            </div>
+    
+            <hr>
+                
+            <h3>
+                <font color="#022d42">CRIMES CONTRA A PROPRIEDADE PÚBLICA E SUA ECONOMIA:</font>
+            </h3>
+    
+            <div class="col col-md-12">
+                <input id="Art. 73 - Caixa eletrônico (ATM)" type="checkbox" class="form-check-input" name="crime" value="25|25000|35000" onclick="calcular()">
+                <label class="form-check-label" for="Art. 73 - Caixa eletrônico (ATM)">Art. 73 - Caixa eletrônico (ATM)</label>
+            </div>
+            <div class="col col-md-12">
+                <input id="Art. 74 - Caixa registradora" type="checkbox" class="form-check-input" name="crime" value="20|20000|30000" onclick="calcular()">
+                <label class="form-check-label" for="Art. 74 - Caixa registradora">Art. 74 - Caixa registradora</label>
+            </div>
+            <div class="col col-md-12">
+                <input id="Art. 75 - Barbearia" type="checkbox" class="form-check-input" name="crime" value="25|25000|35000" onclick="calcular()">
+                <label class="form-check-label" for="Art. 75 - Barbearia">Art. 75 - Barbearia</label>
+            </div>
+            <div class="col col-md-12">
+                <input id="Art. 76 - Loja de roupas" type="checkbox" class="form-check-input" name="crime" value="25|25000|35000" onclick="calcular()">
+                <label class="form-check-label" for="Art. 76 - Loja de roupas">Art. 76 - Loja de roupas</label>
+            </div>
+            <div class="col col-md-12">
+                <input id="Art. 77 - Loja de armas (Ammunation)" type="checkbox" class="form-check-input" name="crime" value="30|30000|40000" onclick="calcular()">
+                <label class="form-check-label" for="Art. 77 - Loja de armas (Ammunation)">Art. 77 - Loja de armas (Ammunation)</label>
+            </div>
+            <div class="col col-md-12">
+                <input id="Art. 78 - Loja de departamento" type="checkbox" class="form-check-input reincidente" name="crime" value="30|30000|40000" onclick="calcular()">
+                <label class="form-check-label" for="Art. 78 - Loja de departamento">Art. 78 - Loja de departamento</label>
+            </div>
+            <div class="col col-md-12">
+                <input id="Art. 79 - Banco fleeca" type="checkbox" class="form-check-input reincidente" name="crime" value="35|35000|45000" onclick="calcular()">
+                <label class="form-check-label" for="Art. 79 - Banco fleeca">Art. 79 - Banco fleeca</label>
+            </div>
+            <div class="col col-md-12">
+                <input id="Art. 80 - Banco fleeca (Com refém)" type="checkbox" class="form-check-input reincidente" name="crime" value="40|40000|50000" onclick="calcular()">
+                <label class="form-check-label" for="Art. 80 - Banco fleeca (Com refém)">Art. 80 - Banco fleeca (Com refém)</label>
+            </div>
+            <div class="col col-md-12">
+                <input id="Art. 81 - Trevor" type="checkbox" class="form-check-input reincidente" name="crime" value="40|40000|50000" onclick="calcular()">
+                <label class="form-check-label" for="Art. 81 - Trevor">Art. 81 - Trevor</label>
+            </div>
+            <div class="col col-md-12">
+                <input id="Art. 82 - Yellow jack" type="checkbox" class="form-check-input reincidente" name="crime" value="40|40000|50000" onclick="calcular()">
+                <label class="form-check-label" for="Art. 82 - Yellow jack">Art. 82 - Yellow jack</label>
+            </div>
+            <div class="col col-md-12">
+                <input id="Art. 83 - Açougue" type="checkbox" class="form-check-input reincidente" name="crime" value="40|40000|50000" onclick="calcular()">
+                <label class="form-check-label" for="Art. 83 - Açougue">Art. 83 - Açougue</label>
+            </div>
+            <div class="col col-md-12">
+                <input id="Art. 84 - Açougue (Com refém)" type="checkbox" class="form-check-input reincidente" name="crime" value="45|45000|55000" onclick="calcular()">
+                <label class="form-check-label" for="Art. 84 - Açougue (Com refém)">Art. 84 - Açougue (Com refém)</label>
+            </div>
+            <div class="col col-md-12">
+                <input id="Art. 85 - Galinheiro" type="checkbox" class="form-check-input reincidente" name="crime" value="40|40000|50000" onclick="calcular()">
+                <label class="form-check-label" for="Art. 85 - Galinheiro">Art. 85 - Galinheiro</label>
+            </div>
+            <div class="col col-md-12">
+                <input id="Art. 86 - Galinheiro (Com refém)" type="checkbox" class="form-check-input reincidente" name="crime" value="45|45000|55000" onclick="calcular()">
+                <label class="form-check-label" for="Art. 86 - Galinheiro (Com refém)">Art. 86 - Galinheiro (Com refém)</label>
+            </div>
+            <div class="col col-md-12">
+                <input id="Art. 87 - Teatro" type="checkbox" class="form-check-input reincidente" name="crime" value="50|50000|60000" onclick="calcular()">
+                <label class="form-check-label" for="Art. 87 - Teatro">Art. 87 - Teatro</label>
+            </div>
+            <div class="col col-md-12">
+                <input id="Art. 88 - Joalheria" type="checkbox" class="form-check-input reincidente" name="crime" value="60|60000|70000" onclick="calcular()">
+                <label class="form-check-label" for="Art. 88 - Joalheria">Art. 88 - Joalheria</label>
+            </div>
+            <div class="col col-md-12">
+                <input id="Art. 89 - Joalheria (Com refém)" type="checkbox" class="form-check-input reincidente" name="crime" value="65|65000|75000" onclick="calcular()">
+                <label class="form-check-label" for="Art. 89 - Joalheria (Com refém)">Art. 89 - Joalheria (Com refém)</label>
+            </div>
+            <div class="col col-md-12">
+                <input id="Art. 90 - Banco paleto" type="checkbox" class="form-check-input reincidente" name="crime" value="70|70000|80000" onclick="calcular()">
+                <label class="form-check-label" for="Art. 90 - Banco paleto">Art. 90 - Banco paleto</label>
+            </div>
+            <div class="col col-md-12">
+                <input id="Art. 91 - Banco paleto (Com refém)" type="checkbox" class="form-check-input reincidente" name="crime" value="75|75000|85000" onclick="calcular()">
+                <label class="form-check-label" for="Art. 91 - Banco paleto (Com refém)">Art. 91 - Banco paleto (Com refém)</label>
+            </div>
+            <div class="col col-md-12">
+                <input id="Art. 92 - Banco central" type="checkbox" class="form-check-input reincidente" name="crime" value="80|80000|90000" onclick="calcular()">
+                <label class="form-check-label" for="Art. 92 - Banco central">Art. 92 - Banco central</label>
+            </div>
+            <div class="col col-md-12">
+                <input id="Art. 93 - Banco central (Com refém)" type="checkbox" class="form-check-input reincidente" name="crime" value="85|85000|95000" onclick="calcular()">
+                <label class="form-check-label" for="Art. 93 - Banco central (Com refém)">Art. 93 - Banco central (Com refém)</label>
+            </div>
+            <div class="col col-md-12">
+                <input id="Art. 94 - Laboratório" type="checkbox" class="form-check-input reincidente" name="crime" value="80|80000|90000" onclick="calcular()">
+                <label class="form-check-label" for="Art. 94 - Laboratório">Art. 94 - Laboratório</label>
+            </div>
+            <div class="col col-md-12">
+                <input id="Art. 95 - laboratório" type="checkbox" class="form-check-input reincidente" name="crime" value="85|85000|95000" onclick="calcular()">
+                <label class="form-check-label" for="Art. 95 - laboratório">Art. 95 - laboratório</label>
+            </div>
+            <div class="col col-md-12">
+                <input id="Art. 96 - Iate paleto" type="checkbox" class="form-check-input reincidente" name="crime" value="70|70000|80000" onclick="calcular()">
+                <label class="form-check-label" for="Art. 96 - Iate paleto">Art. 96 - Iate paleto</label>
+            </div>
+            <div class="col col-md-12">
+                <input id="Art. 97 - Iate paleto (Com refém)" type="checkbox" class="form-check-input reincidente" name="crime" value="75|75000|85000" onclick="calcular()">
+                <label class="form-check-label" for="Art. 97 - Iate paleto (Com refém)">Art. 97 - Iate paleto (Com refém)</label>
+            </div>
+            <div class="col col-md-12">
+                <input id="Art. 98 - Cayo perico" type="checkbox" class="form-check-input reincidente" name="crime" value="90|90000|100000" onclick="calcular()">
+                <label class="form-check-label" for="Art. 98 - Cayo perico">Art. 98 - Cayo perico</label>
+            </div>
+            <div class="col col-md-12">
+                <input id="Art. 99 - Cayo perico (Com refém)" type="checkbox" class="form-check-input reincidente" name="crime" value="95|95000|105000" onclick="calcular()">
+                <label class="form-check-label" for="Art. 99 - Cayo perico (Com refém)">Art. 99 - Cayo perico (Com refém)</label>
+            </div>
+            <div class="col col-md-12">
+                <input id="Art. 100 - Corrida ilegal" type="checkbox" class="form-check-input reincidente" name="crime" value="20|25000|35000" onclick="calcular()">
+                <label class="form-check-label" for="Art. 100 - Corrida ilegal">Art. 100 - Corrida ilegal</label>
+            </div>
+
+            <font color="#022d42">
+        </font></div><font color="#022d42">
+        
+        <div class="quadro form-control">
+            <h3>
+                <font color="#000000"> 🧮 CALCULADORA</font>
+            </h3>
+            <font color="#000000">
+                <h4>⚖️ PENA:</h4>
+                <input type="text" id="pena" name="pena" class="form-control" readonly="true" size="2" style="margin-right:5px">
+                    <div class="alert alert-success" id="penamaxima" style="display: none;" role="alert">
+                        A pena total do mesmo excedeu 130 MESES.
+                    </div>
+                    
+                <h4>💸 MULTA: </h4> <input type="text" id="multa" name="multa" class="form-control" readonly="true" size="5" style="margin-right:15px">
+                <h4>💸 FIANÇA: </h4> <input type="text" id="fianca" name="fianca" class="form-control" readonly="true" size="8" style="margin-right:10px">
+                <input hidden="" id="fianca-hidden">
+                <h4>⚖️ CONDICIONAL:</h4> <input type="text" value="NÃO USAR" id="condicional" class="form-control" name="condicional" readonly="true" size="7" style="margin-right:10px">
+                <br>
+                <button class="btn btn-danger" onclick="limpar()"><i class="bi bi-trash"></i> Limpar</button>
+    
+    
+                    
+                    <h3>CRIMES (ARTIGOS SELECIONADOS):</h3>
+                    <textarea rows="10" cols="50" style="resize: none;" readonly="true" maxlength="500" id="copy-text" class="TextoArtigos form-control"></textarea>
+    
+                    <br> <button class="btn btn-success" id="copy"> <i class="bi bi-clipboard"></i> Copiar</button>
+                            
+                    <div class="alert alert-success" id="copiado" style="display: none;" role="alert">
+                        Copiado com sucesso
+                    </div>
+                    <div class="alert alert-success" id="alerta" style="display: none;" role="alert">
+                        Escolha os crimes
+                    </div>
+                    <div class="alert alert-success" id="alerta-1" style="display: none;" role="alert">
+                        Informe o RG do Advogado
+                    </div>
+                    <div class="alert alert-success" id="alerta-2" style="display: none;" role="alert">
+                        Crime inafiançável
+                    </div>
+                    <h3>
+                        <font color="#022d42">ATENUANTES:</font>
+                    </h3>
+                    <h4>
+                        <font color="#b50000">
+                            <input type="checkbox" class="form-check-input" id="advogado-30" name="advogado-30" value="20">🔹 Advogado constituído:
+                            <font color="#6f747a">Redução de 20% na pena total.
+                                <div class="col col-md-12 advogado-1" style="display: none;">
+                                    <h4>
+                                        <font color="#b50000"><input id="reu-primario" type="checkbox" class="form-check-input" value="30" name="reu-primario">🔹 Réu primário:
+                                            <font color="#6f747a">Redução de 30% na pena total.
+                                </font></font></h4></div><font color="#b50000"><font color="#6f747a">
+                                <div class="col col-md-12 advogado-2" style="display: none;">
+                                    <h4>
+                                        <font color="#b50000"><input id="reu-confesso" type="checkbox" class="form-check-input" value="70" name="reu-confesso">🔹 Réu delator premiado:
+                                            <font color="#6f747a">Redução de 70% na pena total.
+                                    </font></font></h4><font color="#b50000"><font color="#6f747a">
+                                </font></font></div><font color="#b50000"><font color="#6f747a">
+                                <div class="col col-md-12 advogado-3" style="display: none;">
+    
+                                    <h4>
+                                        <font color="#b50000">🔹 Delação premiada: <font color="#6f747a">Critério do
+                                                policial.</font>
+                                        </font>
+                                    </h4>
+                                    <font color="#b50000">
+                                        <div class="col col-md-12" style="padding-left: 5%;">
+                                            <input id="delacao-premiada" class="form-control" min="0" max="100" type="number" name="delacao-premiada">
+                                        </div>
+                                </font></div><font color="#b50000">
+                                <br>
+                                <input type="checkbox" class="form-check-input" id="mandado" name="mandado" value="500">🔹 Mandado de busca e apreensão: <font color="#6f747a"> Ordem do juiz, mandando que se apreenda coisa em poder de outrem ou em certo lugar, para ser trazida a juízo e aí ficar sob custódia do próprio juiz, mesmo que em poder de um depositário por ele designado ou do depositário público.
+                                <br>
+                                <input type="checkbox" id="porte" name="porte" class="form-check-input" value="1" title="Marque se o indivíduo possuir porte de arma.">
+                                    📋 POSSUI PORTE DE ARMA
+                                    <br>
+                                <input type="checkbox" id="fiancaP" name="fiancaP" class="form-check-input" value="1" title="Marque se o indivíduo pagou a fiança.">
+                                    🔻 FIANÇA
+                                <textarea rows="10" cols="50" style="resize: none; display: none;" readonly="true" maxlength="500" id="discord-text"></textarea>
+    
+                                <hr>
+
+                            <div class="col col-md-12">
+                                <h3>
+                                    <font color="#022d42">ITENS APREENDIDOS:</font>
+                                </h3>
+                                    <font color="#022d42">
+                                <textarea rows="10" style="resize: none;" maxlength="500" id="itens" class="form-control"></textarea>
+                                    </font>
+                            </div>
+
+        </font></font></font></font></font></font></font></font></h4></font></div><font color="#000000"><font color="#b50000"><font color="#6f747a"><font color="#b50000"><font color="#6f747a"><font color="#b50000"><font color="#6f747a">
+    
+
+
+        <input hidden="" id="pena-delacao" type="number" value="0">
+        <input hidden="" id="pena-reducao" type="number" value="0">
+    
+            
+    
+    
+    
+    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+            <script src="https://momentjs.com/downloads/moment.js"></script>
+        <script type="text/javascript">
+    
+            $(document).ready(async function () {
+                $(this).tooltip();
+                try {
+                    const {state} = await navigator.permissions.query({name: 'clipboard-write'})
+                    return state === "granted"
+                } catch{
+                    return false;
+                }
+            });
+            var atenuante = [];
+    
+            $("#mandado").change(function(){
+                if ($("#mandado")[0].checked === false) {
+                    atenuante = [];
+                    calcular();
+                } else{
+                    atenuante += ["🔹 Mandado de busca e apreensão"]
+                }
+            })
+    
+            $("#1 :checkbox").change(function () {
+                let textAreaVal = $(".TextoArtigos").val();
+                if ($(this).prop("checked") == true) {
+                    if (!textAreaVal.includes($(this).attr("id"))) {
+                        textAreaVal += $(this).attr("id") + "\n";
+                    }
+                }
+                else {
+                    if (textAreaVal.includes($(this).attr("id"))) {
+                        textAreaVal = textAreaVal.replace($(this).attr("id") + "\n", "");
+                    }
+                }
+                $("#fiancaP")[0].checked = false;
+    
+                $(".TextoArtigos").val(textAreaVal);
+            });
+            $("#2 :checkbox").change(function () {
+                let textAreaVal = $(".TextoArtigos").val();
+                if ($(this).prop("checked") == true) {
+                    if (!textAreaVal.includes($(this).val())) {
+                        textAreaVal += $(this).attr("id") + "\n";
+                    }
+    
+                }
+                else {
+                    if (textAreaVal.includes($(this).attr("id"))) {
+                        textAreaVal = textAreaVal.replace($(this).attr("id") + '\n', "");
+                    }
+                }
+                $("#pena-reducao")[0].value = 0;
+                $("#fiancaP")[0].checked = false;
+    
+                $(".TextoArtigos").val(textAreaVal);
+            });
+            $("#3 :checkbox").change(function () {
+                let textAreaVal = $(".TextoArtigos").val();
+                if ($(this).prop("checked") == true) {
+                    if (!textAreaVal.includes($(this).val())) {
+                        textAreaVal += $(this).attr("id") + "\n";
+                    }
+    
+                }
+                else {
+                    if (textAreaVal.includes($(this).attr("id"))) {
+                        textAreaVal = textAreaVal.replace($(this).attr("id") + '\n', "");
+                    }
+                }
+                $("#fiancaP")[0].checked = false;
+    
+                $(".TextoArtigos").val(textAreaVal);
+            });
+            
+    
+            $("#delacao-premiada").focusout(function () {
+                if ($("#delacao-premiada")[0].value < 0 && $("#delacao-premiada")[0].value > 100) {
+                    alert("Informe um valor válido entre 0 a 100%")
+                } else{
+                }  if (!$("#delacao-premiada")[0].value) {
+                    calcular();
+                }
+                    else {
+    
+                        var pena = $("#pena-reducao")[0].value;
+                        var Pena = 0;
+                        var fiancaReduzir = 0;
+                        var fiancaC = 0;
+                        var pena_txt = document.getElementById("pena");
+                        var crimes = document.getElementsByName('crime');
+                        var fianca_txt = document.getElementById("fianca");
+                        for (var i = 0; i < crimes.length; i++) {
+                            if (crimes[i].checked) {
+                                var valores_crime = crimes[i].value.split("|");
+                                Pena += parseInt(valores_crime[0]);
+                                fiancaC += parseInt(valores_crime[2]);
+                            }
+                        }
+                        var sujo = parseInt(document.getElementById("sujo").value);
+                        if (sujo > 0) {
+                            var unidade_sujo = sujo / 10000;
+                            if (sujo >= 1000) {
+                                fiancaC += sujo / 100 * 30;
+    
+                            }
+                        }
+                        calcular();
+                            /*
+                            pena = parseInt(pena) + parseInt($("#delacao-premiada")[0].value);
+                            if (pena > 100) {
+                                pena = 100;
+                            }
+                            $("#pena-reducao").val(pena);
+                            penaReduzir = Pena * pena / 100;
+                            pena_txt.value = Pena - penaReduzir;*/
+                }
+            });
+    
+            $("#reu-confesso").change(function () {
+                var pena_txt = document.getElementById("pena");
+                var penaReduzir = 0;
+                $("pena-reducao").val(0);
+    
+                if ($("#reu-confesso")[0].checked === false) {
+                    $("#reu-confesso")[0].checked = false;
+                    calcular();
+                } else{
+                        var pena = $("#pena-reducao")[0].value;			
+                        var Pena = 0;
+                        var penaReduzir = 0;
+                        var fiancaReduzir = 0;
+                        var fiancaC = 0;
+                        var pena_txt = document.getElementById("pena");
+                        var crimes = document.getElementsByName('crime');
+                        var fianca_txt = document.getElementById("fianca");
+                        for (var i = 0; i < crimes.length; i++) {
+                            if (crimes[i].checked) {
+                                var valores_crime = crimes[i].value.split("|");							
+                                Pena += parseInt(valores_crime[0]);
+                                fiancaC += parseInt(valores_crime[2]);
+                            }
+                        }
+                        var sujo = parseInt(document.getElementById("sujo").value);
+                        if (sujo > 0) {
+                            var unidade_sujo = sujo / 10000;
+                            if (sujo >= 1000) {
+                                fiancaC += sujo / 100 * 30;
+    
+                            }
+                        }/*
+                            pena = parseInt(pena) + parseInt(20);
+                            if(pena === 0){
+                                pena = parseInt(pena) - parseInt(20);
+                            }
+                            
+                            if (pena > 70) {
+                                pena = 70;
+                            }
+    
+                            $("#pena-reducao").val(pena);
+                            penaReduzir = Pena * pena / 100;
+                            pena_txt.value = Pena - penaReduzir;*/
+                            if(!atenuante.includes("Réu confesso")){
+                            atenuante += ["\n* 🔹 Réu confesso: Redução de 10% na pena total."]
+                        }
+                        calcular();
+    
+                }
+    
+            })
+            $("#reu-primario").change(function () {
+                var pena_txt = document.getElementById("pena");
+                var penaReduzir = 0;
+                $("pena-reducao").val(0);
+                if ($("#reu-primario")[0].checked === false) {
+                    $("#reu-primario")[0].checked = false;
+                    calcular();
+                } else{
+                        var pena = $("#pena-reducao")[0].value;
+                        var Pena = 0;
+                        var penaReduzir = 0;
+                        var fiancaReduzir = 0;
+                        var fiancaC = 0;
+                        var pena_txt = document.getElementById("pena");
+                        var crimes = document.getElementsByName('crime');
+                        var fianca_txt = document.getElementById("fianca");
+                        for (var i = 0; i < crimes.length; i++) {
+                            if (crimes[i].checked) {
+                                var valores_crime = crimes[i].value.split("|");
+                                Pena += parseInt(valores_crime[0]);
+                                fiancaC += parseInt(valores_crime[2]);
+                            }
+                        }
+                        var sujo = parseInt(document.getElementById("sujo").value);
+                        if (sujo > 0) {
+                            var unidade_sujo = sujo / 10000;
+                            if (sujo >= 1000) {
+                                fiancaC += sujo / 100 * 30;
+    
+                            }
+                        }
+                        /*
+                            pena = parseInt(pena) + parseInt(20);
+                            if(pena === 0){
+                                pena = parseInt(pena) - parseInt(20);
+                            }
+                            
+                            if (pena > 70) {
+                                pena = 70;
+                            }
+    
+                            $("#pena-reducao").val(pena);
+                            penaReduzir = Pena * pena / 100;
+                            pena_txt.value = Pena - penaReduzir;*/
+                        if(!atenuante.includes("Réu primário")){
+                            atenuante += ["\n* 🔹 Réu primário: Redução de 30% na pena total."]
+                        }
+                        calcular();
+    
+                }
+    
+    
+            });
+            function recalcularPena() {
+                var pena_txt = document.getElementById("pena");
+                var fianca_txt = document.getElementById("fianca");
+                var Fianca = 0;
+                var penaRed = $("#pena-reducao")[0].value;
+                var Pena = 0;
+                var crimes = document.getElementsByName('crime');
+                for (var i = 0; i < crimes.length; i++) {
+                    if (crimes[i].checked) {
+                        var valores_crime = crimes[i].value.split("|");
+                        Pena += parseInt(valores_crime[0]);
+                        Fianca += parseInt(valores_crime[2]);
+                        /*Condicional += parseInt(valores_crime[0])*4; */
+                        Condicional = "NÃO USAR";
+                    }
+                }
+                
+    
+                /* dinheiro sujo */
+                var sujo = parseInt(document.getElementById("sujo").value);
+                if (sujo > 0) {
+                    var unidade_sujo = sujo / 10000;
+                    if (sujo >= 1000) {
+                        Fianca += sujo / 100 * 30;
+    
+                    }
+                }
+                if($("#mandado")[0].checked == false) {
+                    if (Pena > 130) {
+                        Pena = 130;
+                    }
+                } else{
+                    if (Pena > 130){
+                        Pena = 130;
+                    }
+                } 
+                pena_txt.value = Pena;
+                if (isNaN(Fianca) || $("#mandado")[0].checked == true) {
+                    fianca_txt.value = "SEM FIANÇA";
+                } else {
+                    fianca_txt.value = "R$" + Fianca.toLocaleString('pt-BR', { minimumFractionDigits: 2 });
+                }
+            }
+            // Kb 21/03/2023
+            $("#advogado-30").change(function () {
+                if($(".TextoArtigos")[0].value  == ""){
+                    $("#advogado-30")[0].checked = false;
+                    $("#alerta")[0].style.display = 'block';
+                    const timeOut = setTimeout(crimesPena, 3000);
+                } else{
+                    if($("#adv_rg")[0].value == ""){
+                            $("#advogado-30")[0].checked = false;
+                            $("#alerta-1")[0].style.display = 'block';
+                            const timeOut = setTimeout(advConst, 3000);
+                        } else {
+                        if ($("#advogado-30")[0].checked === true) {
+                        var pena = $("#pena-reducao")[0].value;
+                        var Pena = 0;
+                        var penaReduzir = 0;
+                        var fiancaReduzir = 0;
+                        var fiancaC = 0;
+                        var pena_txt = document.getElementById("pena");
+                        var crimes = document.getElementsByName('crime');
+                        var fianca_txt = document.getElementById("fianca");
+                        for (var i = 0; i < crimes.length; i++) {
+                            if (crimes[i].checked) {
+                                var valores_crime = crimes[i].value.split("|");
+                                Pena += parseInt(valores_crime[0]);
+                                fiancaC += parseInt(valores_crime[2]);
+                            }
+                        }
+                        var sujo = parseInt(document.getElementById("sujo").value);
+                        if (sujo > 0) {
+                            var unidade_sujo = sujo / 10000;
+                            if (sujo >= 1000) {
+                                fiancaC += sujo / 100 * 30;
+    
+                            }
+                        }
+    
+    
+                            fiancaReduzir = fiancaC * 30 / 100;
+                            fiancaReduzir = fiancaC - fiancaReduzir;
+                            if (isNaN(fiancaReduzir) || $("#mandado")[0].checked == true) {
+                            fianca_txt.value = "SEM FIANÇA";}
+                            else{
+                                fianca_txt.value = "R$" + fiancaReduzir.toLocaleString('pt-BR', { minimumFractionDigits: 2 });
+                            }
+                            /* 	
+                            if(pena === 0){
+                                pena = parseInt(pena) - parseInt(30);
+                            }
+                            
+                            if (pena > 70) {
+                                pena = 70;
+                            }
+    
+                            $("#pena-reducao").val(pena);
+                            penaReduzir = Pena * pena / 100;
+                            pena_txt.value = Pena - penaReduzir;
+                            */
+                            $(".advogado-1")[0].style.display = 'block';
+                            $(".advogado-2")[0].style.display = 'block';
+                            $(".advogado-3")[0].style.display = 'block';
+                            if(!atenuante.includes("Advogado constituído")){
+                                atenuante += ["\n* 🔹 Advogado constituído: Redução de 20% na pena total."]
+                                }
+                                calcular();
+    
+                        } else {
+                            $(".advogado-1")[0].style.display = 'none';
+                            $(".advogado-2")[0].style.display = 'none';
+                            $(".advogado-3")[0].style.display = 'none';
+                            $("#reu-confesso")[0].checked = false;
+                            $("#reu-primario")[0].checked = false;
+                            $("#delacao-premiada")[0].value = "";
+                            calcular();
+                        
+                        } 
+                    }
+                }
+    
+            });
+    
+            $("#fiancaP").change(function () {
+                if($(".TextoArtigos")[0].value  == ""){
+                    $("#fiancaP")[0].checked = false;
+                    $("#alerta")[0].style.display = 'block';
+                    const timeOut = setTimeout(crimesPena, 3000);
+                } else{
+                fianca_txt = document.getElementById("fianca");
+                if($("#adv_rg")[0].value == ""){
+                        $("#advogado-30")[0].checked = false;
+                        $("#fiancaP")[0].checked = false;
+                        $("#alerta-1")[0].style.display = 'block';
+                        const timeOut = setTimeout(advConst, 3000);
+                        } else {
+                if ($("#fiancaP")[0].checked === true && fianca_txt.value != "SEM FIANÇA") {
+                    atenuante += ["\n* 🔹 Fiança paga"]
+                    var pena_txt = document.getElementById("pena");
+                    pena_txt.value = 1;
+                    $("#reu-confesso")[0].checked = false;
+                    $("#reu-primario")[0].checked = false;
+                    $("#advogado-30")[0].checked = false;
+                } else{
+                    $("#alerta-2")[0].style.display = 'block';
+                    const timeOut = setTimeout(inafiancavel, 3000);
+                    $("#fiancaP")[0].checked = false;
+                    calcular();
+                    }
+                }
+            }
+            })
+            function calcular() {
+                var Pena = 0;
+                var Multa = 0;
+                var Fianca = 0;
+                var penaReduzir = 0;
+                var penaRe = 0;
+                var Condicional = "NÃO USAR";
+                var fiancaReduzir = 0;
+                /* Crimes */
+                var crimes = document.getElementsByName('crime');
+                for (var i = 0; i < crimes.length; i++) {
+                    if (crimes[i].checked) {
+                        var valores_crime = crimes[i].value.split("|");
+                        Pena += parseInt(valores_crime[0]);
+                        Multa += parseInt(valores_crime[1]);
+                        Fianca += parseInt(valores_crime[2]);
+                        /*Condicional += parseInt(valores_crime[0])*4; */
+                        Condicional = "NÃO USAR";
+                    }
+                }
+        
+                /* dinheiro sujo */
+                var sujo = parseInt(document.getElementById("sujo").value);
+                if (sujo > 0) {
+                    var unidade_sujo = sujo / 10000;
+                    if (sujo >= 1000) {
+                        Multa += sujo / 100 * 30;
+                        Fianca += sujo / 100 * 30;
+    
+                    }
+                }
+                if($("#mandado")[0].checked == false) {
+                    if (Pena > 130) {
+                        Pena = 130;
+                        $("#penamaxima")[0].style.display = 'block'
+                        const timeOut = setTimeout(tirarPena, 3000);
+                    }
+                    if (Multa > 1000000) {
+                        Multa = 1000000                      
+                    }
+                } else{
+                    if (Pena > 130){
+                        Pena = 130;
+                    }
+                }
+                
+                var fianca_txt = document.getElementById("fianca");
+                var pena_txt = document.getElementById("pena");
+                if ($("#advogado-30")[0].checked === true) {
+                    penaRe = penaRe + 30
+                    fiancaReduzir = Fianca * 30 / 100;
+                    Fianca = Fianca - fiancaReduzir;
+                    if (isNaN(fiancaReduzir) || $("#mandado")[0].checked == true) {
+                    fianca_txt.value = "SEM FIANÇA";}
+                    else{
+                        fianca_txt.value = "R$" + fiancaReduzir.toLocaleString('pt-BR', { minimumFractionDigits: 2 });
+                    }
+                } 
+                if ($("#reu-primario")[0].checked === true) {
+                    penaRe = penaRe + 20
+    
+                }
+                if ($("#reu-confesso")[0].checked === true) {
+                    penaRe = penaRe + 20
+                }
+                if ($("#delacao-premiada")[0].value) {
+                    penaRe = penaRe + parseInt($("#delacao-premiada")[0].value);
+                    if (penaRe > 100){
+                    penaRe = 100;
+                }
+                }
+                if (penaRe > 70 ){
+                    penaRe = 70;
+                }
+                if($("#fiancaP")[0].checked === true){
+                    penaRe = 0;
+                    pena_txt.value = 1;
+                }
+    
+                if(penaRe > 0){
+                    penaReduzir = Pena * parseInt(penaRe) / 100;
+                    pena_txt.value = Pena - penaReduzir;
+                } else{
+                    pena_txt.value = Pena;
+                }
+    
+                if($(".reincidente")[0].checked === true){
+                    Fianca = Fianca * 2;
+                }
+                
+    
+                var multa_txt = document.getElementById("multa");
+                multa_txt.value = "R$" + Multa.toLocaleString('pt-BR', { minimumFractionDigits: 2 });
+                if (isNaN(Fianca) || $("#mandado")[0].checked == true) {
+                    fianca_txt.value = "SEM FIANÇA";
+                } else {
+                    fianca_txt.value = "R$" + Fianca.toLocaleString('pt-BR', { minimumFractionDigits: 2 });
+                }
+    
+    
+                var condicional_txt = document.getElementById("condicional");
+                condicional_txt.value = Condicional.toLocaleString('pt-BR', { minimumFractionDigits: 2 });
+            }
+            function limpar() {
+                var crimes = document.getElementsByName('crime');
+                for (var i = 0; i < crimes.length; i++) {
+                    crimes[i].checked = false;
+                }
+                $("#reu-primario")[0].checked = false
+                $("#reu-confesso")[0].checked = false
+                $("#advogado-30")[0].checked = false
+                $("#fianca")[0].checked = false
+                $("#mandado")[0].checked = false
+                $("#copiado")[0].style.display = 'none'
+                $("#delacao-premiada").val("");
+                $("#fianca")[0].value = "";
+                $("#pena")[0].value = "";
+                $("#multa")[0].value = "";
+                $("#sujo")[0].value = "";
+                $("#fotoInp")[0].value = "";
+                $("#invInp")[0].value = "";
+                $("#condicional")[0].value = "NÃO USAR";
+                $("#copy-text")[0].value = "";
+                $("#itens")[0].value = "";
+                $("#porte")[0].checked = false;
+                $(".advogado-1")[0].style.display = 'none';
+                $(".advogado-2")[0].style.display = 'none';
+                $(".advogado-3")[0].style.display = 'none';
+                $('#preso_nome').val("")
+                $('#preso_rg').val("")
+                $("#multa").val("")
+                $("#adv_rg").val("")
+                $("#pena-reducao").val(0);
+            }
+            $("#copy").click(async function(){
+                if($(".TextoArtigos").val() != "" && 
+                $('#preso_nome').val() != "" &&
+                $('#preso_rg').val()!= "" &&
+                $('#pena').val()!= "" &&
+                $("#multa").val()!= "") {
+                calcular();
+                var fiancaTxT= ""
+    
+                var Pena = 0
+                var Fianca = 0;
+                var fiancaTxt = "";
+                var crimes = document.getElementsByName('crime');
+                for (var i = 0; i < crimes.length; i++) {
+                    if (crimes[i].checked) {
+                        var valores_crime = crimes[i].value.split("|");
+                        Pena += parseInt(valores_crime[0]);
+                        Fianca += parseInt(valores_crime[2]);
+    
+                    }
+                }
+                if($("#mandado")[0].checked == false) {
+                    if (Pena > 130) {
+                        Pena = 130;
+                    }
+                } else{
+                    if (Pena > 130){
+                        Pena = 130;
+                    }
+                } 
+    
+                if ($("#advogado-30")[0].checked === true) {
+                    if (Pena != 0 ){
+                        if (isNaN(Fianca) || $("#mandado")[0].checked == true) {
+                            fiancaTxT = "SEM FIANÇA";
+                            $('#rFianca').html('FIANÇA: '+ fiancaTxT);
+    
+                        }
+                        else{
+                            fiancaTxT = "R$" + Fianca.toLocaleString('pt-BR', { minimumFractionDigits: 2 }) + "(70%)";
+                            $('#rFianca').html('FIANÇA: '+ fiancaTxT);
+                        }
+    
+                    }
+                }
+                
+                porcentagemPena = 100;
+                porcentagemMulta = 100;
+                redPer = porcentagemPena - $("#pena-reducao")[0].value;
+                redMulta = porcentagemMulta - $("#reducaoMulta").val();
+    
+                var text = document.getElementById('discord-text');
+                var today = new Date();
+                var mes = today.getMonth() + 1;
+                var porte = ''
+                var fianca = ''
+                
+    
+                if($("#fiancaP") == 1){
+                    fianca = "Sim"
+                } else{
+                    fianca = "Não"
+                }
+    
+                if($("#porte") == 1){
+                    porte = "Sim"
+                } else{
+                    porte = "Não"
+                }
+                if(!atenuante){
+                text.innerHTML = "```md"+
+                +"\n\n# INFORMAÇÕES DO PRESO:"
+                +"\n* NOME: " + $('#preso_nome').val()
+                +"\n* RG: " + $('#preso_rg').val()
+                +"\n\n# PENA TOTAL: " + Pena+' meses ('+redPer+'%)'
+                +"\n# MULTA: " + $("#multa").val()+' (100%)'
+                +"\n\n# CRIMES: \n" + $(".TextoArtigos").val()
+                +"\n\n# ITENS APREENDIDOS\n" +$("#itens").val()
+                +"\n\n# 📋 PORTE DE ARMA: " + porte 
+                +"\n# 🤵 ADVOGADO: " + $("#adv_rg").val() + "(RG)"
+                +"\n* DATA: "+ today.getDate() +"/" + mes + "/" + today.getFullYear()
+                +"```"
+                } else 
+                {
+                text.innerHTML ="```md"
+                +"\n\n# INFORMAÇÕES DO PRESO:"
+                +"\n* NOME: " + $('#preso_nome').val()
+                +"\n* RG: " + $('#preso_rg').val()
+                +"\n\n# PENA TOTAL: " + Pena+' meses ('+redPer+'%)'
+                +"\n# MULTA: " + $("#multa").val()+' (100%)'
+                +"\n\n# CRIMES: \n" + $(".TextoArtigos").val()
+                +"\n\n# ITENS APREENDIDOS\n" +$("#itens").val()
+                +"\n\n# ATENUANTES: \n" + atenuante
+                +"\n\n# 📋 PORTE DE ARMA: " + porte 
+                +"\n# 🤵 ADVOGADO: " + $("#adv_rg").val() + "(RG)"
+                +"\n* DATA: "+ today.getDate() +"/" + mes + "/" + today.getFullYear()
+                +"```"
+                }
+                    const blobt = new Blob([text.innerHTML], {type: 'text/plain'})
+                    await setToClipboard(blobt);
+            } else{
+    
+            }
+            })
+    
+            $("#copy-image").click(async function(){
+                if($("#foto")[0].src){
+                const data = await fetch($("#foto")[0].src);
+                const blob = await data.blob();
+                await setToClipboard(blob);
+            }
+            });
+    
+            $("#copy-inv").click(async function(){
+                if($("#inv")[0].src){
+                const data = await fetch($("#inv")[0].src);
+                const blob = await data.blob();
+                await setToClipboard(blob);
+                }
+    
+            });
+            const setToClipboard = async blob => {
+                    const dataItem = [new ClipboardItem({ [blob.type]: blob})]
+                    await navigator.clipboard.write(dataItem);
+                }
+    
+            fotoInp.onchange = evt => {
+                const [file] = fotoInp.files
+                if (file) {
+                foto.src = URL.createObjectURL(file)
+                }
+            }
+            invInp.onchange = evt => {
+                const [file2] = invInp.files
+                if (file2) {
+                inv.src = URL.createObjectURL(file2)
+                }
+            }
+    
+            function tirarPena(){
+            $("#penamaxima")[0].style.display = 'none';
+            }
+    
+            function crimesPena(){
+            $("#alerta")[0].style.display = 'none';
+            }
+            function advConst(){
+            $("#alerta-1")[0].style.display = 'none';
+            }
+            function inafiancavel(){
+            $("#alerta-2")[0].style.display = 'none';
+            }
+            function tirarBloco() {
+                $("#copiado")[0].style.display = 'none';
+            }
+        </script>
+        <footer>
+            <div id="imagens" class="flex flex-col items-center justify-center">
+                <div>
+                    <img height="200px" hidden="" id="foto">
+                </div>
+                <div>
+                    <img height="200px" hidden="" id="inv">
+                </div>
+            </div>
+        </footer>  
+        
+    </font></font></font></font></font></font></font></font></font></body></html>
